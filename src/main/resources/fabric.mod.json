@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "max-enchant-trade",
+	"version": "${version}",
+	"name": "max-enchant-trade",
+	"description": "Adds a mixin that forces all enchanted book trades to roll for the highest tradeable level.",
+	"authors": [
+		"ask (aiderisk)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/max-enchant-trade/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ask.met.Maxenchanttrade"
+		]
+	},
+	"mixins": [
+		"maxenchanttrade.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
